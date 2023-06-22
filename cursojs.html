@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS</title>
+    <link rel="stylesheet" href="src/html.css">
+    <link rel="stylesheet" href="src/navegation.css">
+    <link rel="stylesheet" href="src/footer-light.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/default.min.css">
+<script src="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/highlight.min.js"></script>
+<link rel="icon" href="imagenes/Logo.png">
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <nav>
+        <img src="imagenes/Logo.png" id="logo" alt="logo">
+        <ul>
+            <li><a href="cursohtml.html">Curso HTML</a></li>
+            <li><a href="cursocss.html">Curso CSS</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section class="sec1">
+        <div  class="one">
+            <div class="cabezera">
+                <h2>Fundamentos de JavaScript</h2>
+            </div>
+            <div id="first" class="conten-intro">
+                <p>El primer punto, que aborda los fundamentos de JavaScript, es esencial para que los estudiantes adquieran una comprensión sólida de la sintaxis y los conceptos básicos de programación en JavaScript. Les proporcionará las bases necesarias para construir aplicaciones web más complejas y comprender mejor los conceptos avanzados en JS.<br><br>
+
+Al aprender sobre variables, tipos de datos y operadores en JavaScript, los estudiantes podrán almacenar y manipular información de manera eficiente. Comprenderán cómo declarar variables, asignar valores y utilizar operadores aritméticos, de asignación y de comparación para realizar cálculos y tomar decisiones lógicas en sus programas. Además, al aprender sobre estructuras de control, como bucles y condicionales, los estudiantes podrán crear algoritmos y lógica de programación más sofisticada para controlar el flujo de ejecución de su código.<br><br>
+
+Dominar los fundamentos de JavaScript les permitirá a los estudiantes construir una base sólida para su aprendizaje y desarrollo continuo en el mundo de la programación web. Estos conceptos básicos son la piedra angular sobre la cual se construyen aplicaciones más complejas y permiten a los desarrolladores aprovechar todo el potencial de JavaScript como lenguaje de programación versátil y potente.</p>
+            </div>
+        </div>
+        <div class="two">
+            <div class="cabezera">
+                <h2>Manipulación del DOM</h2>
+            </div>
+            <div class="conten-intro">
+                <p>En el segundo punto, que trata sobre la manipulación del DOM en JavaScript, los estudiantes aprenderán a interactuar con los elementos de una página web de manera dinámica y programática. Esto les permitirá modificar y actualizar el contenido, los estilos y los atributos de los elementos HTML utilizando JavaScript.<br><br>
+
+Al enseñarles cómo seleccionar elementos del DOM utilizando métodos como getElementById, querySelector y querySelectorAll, los estudiantes podrán acceder y manipular elementos específicos de la página. Además, podrán utilizar métodos como innerHTML, textContent y setAttribute para cambiar el contenido de los elementos, modificar su texto o actualizar sus atributos.<br><br>
+
+Además de la manipulación básica, también puedes abordar cómo agregar y eliminar elementos del DOM mediante métodos como createElement, appendChild y removeChild. Esto les permitirá crear nuevos elementos en la página y reorganizar la estructura del DOM según sea necesario.<br><br>
+
+La manipulación del DOM en JavaScript es esencial para crear interactividad en una página web y responder a eventos del usuario. Al dominar estas técnicas, los estudiantes podrán construir experiencias web más dinámicas y personalizadas, donde los elementos se actualizan y responden de manera fluida a las interacciones del usuario.</p>
+
+<pre id="first-element"><code class="language-javascript"><div style="width: 100%; height: 100%; background-color: red;"></div>
+ // Acceder a elementos del DOM y modificar su contenido
+    var tituloElement = document.getElementById('titulo');
+    tituloElement.innerHTML = 'Título modificado';
+
+    var parrafoElement = document.getElementById('parrafo');
+    parrafoElement.textContent = 'Contenido modificado del párrafo.';
+
+    // Crear un nuevo elemento y añadirlo al DOM
+    var nuevoParrafoElement = document.createElement('p');
+    nuevoParrafoElement.textContent = 'Este es un nuevo párrafo.';
+
+    document.body.appendChild(nuevoParrafoElement);
+
+    // Agregar una clase CSS a un elemento existente
+    tituloElement.classList.add('destacado');
+
+    // Eliminar un elemento del DOM
+    parrafoElement.remove();
+            </code></pre>
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="one">
+            <div class="cabezera">
+                <h2>Eventos y manejo de eventos</h2>
+            </div>
+            <div class="conten-intro">
+              
+<pre id="second-element"><code class="language-javascript">
+ // Obtener una referencia al botón
+    var boton = document.getElementById('boton');
+
+    // Agregar un evento 'click' al botón
+    boton.addEventListener('click', function() {
+      // Código a ejecutar cuando se haga clic en el botón
+      console.log('Se hizo clic en el botón');
+      alert('¡Hola! Has hecho clic en el botón.');
+    });
+</code></pre>
+            
+                <p>En el tercer punto, que aborda los eventos y el manejo de eventos en JavaScript, los estudiantes podrán comprender cómo interactuar con el usuario y responder a acciones específicas en una página web. A través del uso de JavaScript, podrán vincular funciones a eventos como clics de botones, movimientos del mouse, cambios en formularios y desplazamientos de página. <br><br>
+
+Al enseñarles sobre el manejo de eventos, les mostrarás cómo utilizar métodos como addEventListener() para registrar funciones que se ejecuten cuando ocurra un evento específico. Les explicarás cómo acceder al elemento que desencadenó el evento mediante la palabra clave this o el objeto event.target. Además, podrás introducir el concepto de propagación de eventos y cómo utilizar métodos como stopPropagation() para controlar el flujo de eventos en una página.<br><br>
+
+Mediante ejemplos prácticos y ejercicios, los estudiantes podrán comprender cómo utilizar el manejo de eventos para crear interacciones dinámicas y mejorar la experiencia del usuario en sus proyectos web. Además, podrán explorar conceptos avanzados como la delegación de eventos, que les permitirá gestionar eventos en elementos que aún no existen en el DOM o que se generan dinámicamente.</p>
+
+            </div>
+        </div>
+        <div class="two">
+            <div class="cabezera">
+                <h2>AJAX y peticiones HTTP</h2>
+            </div>
+            <div class="conten-intro">
+                <p>En el cuarto punto, se aborda el tema de AJAX (Asynchronous JavaScript and XML) y las peticiones HTTP en JavaScript. Este tema es fundamental para comprender cómo interactuar con servidores y obtener datos de manera asíncrona, sin necesidad de recargar toda la página.<br><br>
+
+Al enseñar sobre AJAX y las peticiones HTTP en JavaScript, los estudiantes aprenderán cómo utilizar la API Fetch para realizar solicitudes a un servidor y manejar las respuestas de manera eficiente. Puedes guiarlos a través de ejemplos prácticos de cómo obtener datos en formato JSON, enviar formularios y actualizar el contenido de una página sin necesidad de recargarla.<br><br>
+
+Además, puedes resaltar la importancia de comprender los diferentes métodos HTTP, como GET, POST, PUT y DELETE, y cómo utilizarlos adecuadamente según las necesidades de la aplicación. También puedes abordar temas como la autenticación y el manejo de errores en las peticiones HTTP, brindando a los estudiantes un conjunto sólido de habilidades para trabajar con datos dinámicos y realizar interacciones con el servidor de manera eficiente y segura.<br><br>
+
+En resumen, el conocimiento de AJAX y las peticiones HTTP en JavaScript permitirá a los estudiantes crear aplicaciones web más interactivas y dinámicas, ya que podrán obtener y enviar datos de manera asíncrona, mejorar la experiencia del usuario y brindar una mayor funcionalidad en sus proyectos.</p>
+
+<pre id="third-element"><code class="language-javascript">
+ var btnCargar = document.getElementById('btnCargar');
+    var resultadoDiv = document.getElementById('resultado');
+
+    btnCargar.addEventListener('click', function() {
+      // Crear una instancia del objeto XMLHttpRequest
+      var xhr = new XMLHttpRequest();
+
+      // Configurar la solicitud HTTP GET
+      xhr.open('GET', 'https://api.example.com/data', true);
+
+      // Manejar la respuesta de la solicitud
+      xhr.onload = function() {
+        if (xhr.status === 200) {
+          resultadoDiv.textContent = xhr.responseText;
+        } else {
+          resultadoDiv.textContent = 'Error al cargar los datos.';
+        }
+      };
+
+      // Enviar la solicitud
+      xhr.send();
+    });
+            </code></pre>
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="one">
+            <div class="cabezera">
+                <h2>Introducción a frameworks y bibliotecas de JavaScript</h2>
+            </div>
+            <div class="conten-intro">
+                <p>En el quinto punto, al hablar de frameworks y bibliotecas de JavaScript, los estudiantes podrán comprender cómo estas herramientas facilitan el desarrollo de aplicaciones web más complejas y eficientes. Al introducir frameworks como React, Angular o Vue.js, les mostrarás cómo crear aplicaciones web utilizando componentes reutilizables y un enfoque basado en el estado.<br><br>
+
+Estos frameworks permiten a los desarrolladores dividir su aplicación en componentes independientes y autónomos, lo que facilita el mantenimiento, la escalabilidad y la reutilización del código. Además, al adoptar un enfoque basado en el estado, los estudiantes aprenderán cómo gestionar y actualizar el estado de la aplicación de manera eficiente, lo que mejora la experiencia del usuario al proporcionar actualizaciones en tiempo real y una interfaz más interactiva.<br><br>
+
+Al explorar frameworks y bibliotecas de JavaScript, los estudiantes podrán descubrir las ventajas de utilizar estas herramientas en el desarrollo de aplicaciones web modernas. Les abrirá las puertas para construir aplicaciones más sofisticadas, robustas y escalables, y también les proporcionará una base sólida para continuar aprendiendo y adaptándose a los cambios en el ecosistema de desarrollo de JavaScript.</p>
+            </div>
+        </div>
+    </section>
+    
+        <footer>
+                  <div class="foot1">
+                    <img src="imagenes/Logo.png" alt="Logo de NewGenius"> <p><strong>NewGenius</strong></p>
+                  </div>
+                  <div class="foot2">
+                      <a href="mailto:sebsgamez27@gmail.com">sebsgamez27@gmail.com</a><br><br>
+                      <a href="mailto:camilo.pinilla2503@gmail.com">camilo.pinilla2503@gmail.com</a><br><br>
+                      <p class="copi">® NewGenius 2023</p>
+                  </div>
+                  <div class="foot3">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook" id="facebook" style="color: #06eacf;" ></i></a>
+                    <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord" id="discord" style="color: #06eacf;"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" id="instagram" style="color: #06eacf;"></i></a>     
+                  </div>
+                </footer>
+    
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("pre code").forEach(function(block) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+	<script src="https://prismjs.com/prism.js"></script>
+    <script src="./scripts/cursohtml.js"></script> 
+    <script src="https://kit.fontawesome.com/db0882f59e.js" crossorigin="anonymous"></script>
+    <script src="./scripts/curso-js.js"></script>
+</body>
+</html>

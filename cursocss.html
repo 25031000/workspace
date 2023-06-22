@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso CSS</title>
+    <link rel="stylesheet" href="src/html.css">
+    <link rel="stylesheet" href="src/navegation.css">
+    <link rel="stylesheet" href="src/footer-light.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/styles/default.min.css">
+<script src="https://cdn.jsdelivr.net/npm/highlight.js@10.7.2/highlight.min.js"></script>
+<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link rel="icon" href="imagenes/Logo.png">
+</head>
+<body>
+    <nav>
+        <img src="imagenes/Logo.png" id="logo" alt="logo">
+        <ul>
+            <li><a href="cursohtml.html">Curso HTML</a></li>
+            <li><a href="cursojs.html">Curso JavaScript</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+
+    <section class="sec1">
+        <div  class="one">
+            <div class="cabezera">
+                <h2>Selectores y especificidad</h2>
+  
+            </div>
+            <div id="first" class="conten-intro">
+                <p>El primer punto, selectores y especificidad en CSS, es fundamental para comprender cómo seleccionar y aplicar estilos a elementos específicos en una página web. Los selectores son patrones que se utilizan para identificar y apuntar a elementos HTML específicos, como etiquetas, clases o IDs. Es importante comprender la sintaxis y la jerarquía de los selectores para poder aplicar los estilos de manera efectiva.<br><br>
+
+Además, la especificidad juega un papel crucial en la resolución de conflictos entre diferentes reglas de estilo. Cada selector tiene un nivel de especificidad asignado, que determina qué regla de estilo prevalecerá cuando haya reglas que se solapen. Comprender cómo funciona la especificidad ayuda a evitar confusiones y garantizar que los estilos se apliquen de acuerdo con nuestras intenciones. También es importante aprender a utilizar selectores combinados y selectores descendientes para seleccionar elementos específicos dentro de una estructura HTML más compleja. Esto permite una personalización precisa y detallada del estilo de cada elemento en la página web.</p>
+
+<pre id="first-element"><code class="language-css">
+/* Selector de elemento */
+p {
+color: blue;
+}
+
+/* Selector de clase */
+.mensaje {
+  font-weight: bold;
+}
+
+/* Selector de ID */
+#titulo {
+  font-size: 24px;
+}
+</code></pre>
+            </div>
+        </div>
+        <div class="two">
+            <div class="cabezera">
+                <h2>Caja de modelo CSS</h2>
+
+            </div>
+            <div class="conten-intro">
+              
+<pre id="second-element"><code class="language-css">
+.box {
+  width: 200px;
+  height: 150px;
+  padding: 20px;
+  border: 2px solid #000;
+  margin: 20px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+            </code></pre>
+            
+                <p>El segundo punto se enfoca en la caja de modelo CSS, que es esencial para comprender cómo se visualizan y se posicionan los elementos en una página web. El modelo de caja se compone de cuatro elementos principales: margen, borde, relleno y dimensiones (ancho y alto).<br><br>
+
+En primer lugar, los márgenes definen el espacio alrededor de un elemento y permiten controlar su separación con otros elementos. Los bordes, por otro lado, proporcionan un contorno visible alrededor de un elemento y se pueden personalizar en términos de estilo, grosor y color. Luego, el relleno define el espacio dentro de un elemento, entre su contenido y su borde. Al ajustar los valores de margen, borde y relleno, los diseñadores pueden controlar la disposición y el espacio de cada elemento en la página.<br><br>
+
+Además, es importante comprender las dimensiones de un elemento, es decir, su ancho y alto. Estas dimensiones pueden especificarse en unidades de medida como píxeles, porcentajes o ems. Al comprender y manipular adecuadamente el modelo de caja CSS, los estudiantes podrán lograr diseños más precisos y consistentes en sus páginas web.</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="sec2">
+        <div class="one">
+            <div class="cabezera">
+                <h2>Diseño y posicionamiento</h2>
+
+            </div>
+            <div class="conten-intro">
+                <p>
+En el tercer punto, que aborda el diseño y posicionamiento en CSS, los estudiantes podrán aprender técnicas modernas y poderosas para crear diseños flexibles y adaptables. Por ejemplo, el diseño de cajas flexibles o Flexbox permite organizar elementos en filas y columnas de manera intuitiva y flexible. Los estudiantes aprenderán cómo utilizar propiedades como display: flex, flex-direction, justify-content y align-items para controlar la distribución y alineación de los elementos en un contenedor.<br><br>
+
+Además, el sistema de rejilla o Grid proporciona una forma más avanzada de diseño en CSS, permitiendo a los estudiantes crear diseños más complejos y estructurados. Mediante la definición de filas y columnas, así como la asignación de elementos a áreas específicas de la rejilla, los estudiantes podrán lograr diseños responsivos y controlar el posicionamiento de los elementos de manera más precisa. Puedes enseñarles cómo utilizar propiedades como grid-template-rows, grid-template-columns, grid-gap y grid-area para construir diseños sofisticados y adaptativos.<br><br>
+
+Al explorar estas técnicas de diseño y posicionamiento en CSS, los estudiantes estarán preparados para crear diseños web modernos y responsivos, brindando a los usuarios una experiencia visualmente atractiva y funcional en diferentes dispositivos y tamaños de pantalla.</p>
+
+<pre id="third-element"><code class="language-css">
+/* Posicionamiento relativo */
+.relative {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+/* Posicionamiento absoluto */
+.absolute {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+/* Posicionamiento fijo */
+.fixed {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+</code></pre>
+
+            </div>
+        </div>
+        <div class="two">
+            <div class="cabezera">
+                <h2>Estilos avanzados</h2>
+   
+            </div>
+            <div class="conten-intro">
+              
+<pre id="forth-element"><code class="language-css">
+/* Transformación 2D */
+.two-d-transform {
+  transform: rotate(45deg) scale(1.5) skewX(10deg) translate(20px, 20px);
+}
+
+/* Transformación 3D */
+.three-d-transform {
+  transform: rotateX(45deg) rotateY(45deg) rotateZ(45deg) scale3d(1.5, 1.5, 1.5) skewX(10deg) translate3d(20px, 20px, 20px);
+}
+            </code></pre>
+            
+                <p>En el cuarto punto, se abordan los estilos avanzados en CSS, lo cual permite a los estudiantes explorar una serie de características y efectos visuales impresionantes para mejorar la apariencia de sus páginas web. Uno de estos aspectos es el uso de transformaciones 2D y 3D, que permiten rotar, escalar, sesgar y trasladar elementos en el espacio, brindando una mayor flexibilidad en el diseño. Esto puede utilizarse para crear elementos interactivos y experiencias visuales llamativas.<br><br>
+
+Otra área emocionante de los estilos avanzados en CSS son las transiciones y animaciones. Con estas propiedades, los estudiantes pueden definir cambios suaves y fluidos en los estilos de los elementos a lo largo del tiempo. Pueden controlar la duración, la función de tiempo y las propiedades específicas que cambian, lo que les brinda el poder de crear efectos visuales dinámicos y cautivadores. Desde animaciones sutiles para realzar el feedback de los usuarios hasta transiciones sorprendentes entre diferentes estados de un elemento, las transiciones y animaciones en CSS permiten a los estudiantes llevar sus diseños al siguiente nivel.</p>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="sec3">
+        <div class="one">
+            <div class="cabezera">
+                <h2>Diseño web responsive con CSS</h2>
+
+            </div>
+            <div class="conten-intro">
+                <p>En el quinto punto, que trata sobre el diseño web responsive con CSS, los estudiantes podrán aprender cómo crear diseños adaptables y fluidos que se ajusten automáticamente a diferentes dispositivos y tamaños de pantalla. Este enfoque es esencial en la actualidad, ya que los usuarios acceden a las páginas web desde una amplia variedad de dispositivos, como teléfonos móviles, tablets y computadoras de escritorio.<br><br>
+
+Al comprender cómo utilizar media queries en CSS, los estudiantes podrán establecer reglas de estilo específicas para diferentes rangos de resoluciones y dispositivos. Les enseñarás cómo utilizar consultas de medios para detectar características del dispositivo, como el ancho de pantalla, y aplicar reglas de estilo personalizadas según las necesidades. También puedes destacar la técnica del diseño móvil primero (mobile-first), que implica diseñar y desarrollar primero para dispositivos móviles y luego expandirse hacia resoluciones más grandes.<br><br>
+
+Al dominar el diseño web responsive con CSS, los estudiantes estarán equipados para crear sitios web que se vean y funcionen de manera óptima en cualquier dispositivo, brindando una experiencia de usuario consistente y agradable, independientemente de cómo los visitantes accedan a la página.</p>
+<pre id="fifth-element"><code class="language-css">
+ @media (max-width: 768px) {
+/* Ajuste de estilos para pantallas más pequeñas */
+  .container {
+    padding: 10px;
+  }
+
+  article {
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+}
+</code></pre>
+            </div>
+        </div>
+    </section>
+    
+      <footer>
+                  <div class="foot1">
+                    <img src="imagenes/Logo.png" alt="Logo de NewGenius"> <p><strong>NewGenius</strong></p>
+                  </div>
+                  <div class="foot2">
+                      <a href="mailto:sebsgamez27@gmail.com">sebsgamez27@gmail.com</a><br><br>
+                      <a href="mailto:camilo.pinilla2503@gmail.com">camilo.pinilla2503@gmail.com</a><br><br>
+                      <p class="copi">® NewGenius 2023</p>
+                  </div>
+                  <div class="foot3">
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank"><i class="fa-brands fa-facebook" id="facebook" style="color: #06eacf;" ></i></a>
+                    <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord" id="discord" style="color: #06eacf;"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram" id="instagram" style="color: #06eacf;"></i></a>     
+                  </div>
+                </footer>
+    
+     <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("pre code").forEach(function(block) {
+      hljs.highlightBlock(block);
+    });
+  });
+</script>
+	<script src="https://prismjs.com/prism.js"></script>
+    <script src="./scripts/cursohtml.js"></script> 
+     <script src="https://kit.fontawesome.com/db0882f59e.js" crossorigin="anonymous"></script>
+     <script src="./scripts/curso-css.js"></script>
+</body>
+</html>

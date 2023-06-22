@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/login.css">
+    <title>Ingreso</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var form = document.getElementById("miFormulario");
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            window.location.href = "index.html";
+        });
+        });
+    </script>
+
+</head>
+
+<body>
+    
+    <div class="box">
+        <form action="" id="miFormulario">
+            <h2>Iniciar sesion</h2>
+            <div class="inputbox">
+                <input type="text" required>
+                <span>Ingrese su usuario</span>
+                <i></i>
+            </div>
+
+            <div class="inputbox">
+                <input type="password" required>
+                <span>Ingrese su contraseña</span>
+                <i></i>
+            </div>
+    
+            <input type="submit" value="Iniciar sesion">
+            <div class="links">
+                <a href="registro.html">Registrarme</a>
+            </div>
+        </form>
+
+    </form>
+
+</body>
+
+</html>

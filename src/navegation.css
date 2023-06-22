@@ -1,0 +1,39 @@
+/* ----------------------------------------Navegacion--------------------------------------- */
+
+nav {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(96, 97, 112, 0.15);
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav > #logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 40px;
+}
+
+nav > ul {
+  margin-left: 100px;
+  display: flex;
+  gap: 5px;
+}
+
+nav > ul > li {
+  display: block;
+  list-style: none;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  border-radius: 10px;
+}
+
+nav > ul > li:hover {
+  background-color: rgba(143, 140, 140, 0.281);
+}

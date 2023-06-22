@@ -1,0 +1,60 @@
+#facebook,
+#discord,
+#instagram {
+  font-size: 2rem;
+}
+
+footer {
+  padding: 10px;
+  display: flex;
+  justify-items: center;
+  color: #000;
+  font-size: 1.5rem;
+  width: 100vw;
+  font-family: "Raleway", sans-serif;
+  margin-top: 30px;
+  box-shadow: 0 4px 16px rgba(96, 97, 112, 0.15);
+}
+
+.foot1 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.foot2 {
+  width: 50%;
+  text-align: center;
+}
+
+.foot1 img {
+  height: 25px;
+}
+
+.foot2 a {
+  color: #000;
+  text-decoration: none;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.foot2 a:hover {
+  text-decoration: line-through;
+}
+
+.foot3 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+}
+
+.foot3 i {
+  cursor: pointer;
+}
+
+.copi {
+  color: #000;
+}
